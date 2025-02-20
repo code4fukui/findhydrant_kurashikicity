@@ -14,6 +14,7 @@ import { Geo3x3 } from "https://geo3x3.com/Geo3x3.js";
 import { ArrayUtil } from "https://js.sabae.cc/ArrayUtil.js";
 
 const fn = "332020_fire_hydrant_202404_standard.csv";
+const src = "https://www.okayama-opendata.jp/resources/14754";
 
 const allflg = new URL(document.location).searchParams.get("all") === "";
 
@@ -198,7 +199,7 @@ const fetchRefuge = async () => {
         o[name2] = i[name];
       }
     }
-    o.s = "http://linkdata.org/work/rdf1s9409i";
+    o.s = src;
     return o;
   });
   const clss = ArrayUtil.toUnique(res.map(i => i.classified));
@@ -358,7 +359,7 @@ const getContent = function(data) {
   if (data.note)
     s.push("備考：" + decodeURIComponent(data.note) + "mm<br>");
   if (data.s)
-    s.push("出展:" + "<a href='" + data.s + "' target=_blank>" + data.s + "</a><br>");
+    s.push("出典：" + "<a href='" + data.s + "' target=_blank>" + data.s + "</a><br>");
 //  s.push("DATA <a href='" + data.url + "' target=_blank>" + data.url + "</a><br>");
 //  debug(data.graph);
   if (data.graph.startsWith("http://odp.jig.jp/rdf/jp/fukui/sabae/")) {
@@ -489,6 +490,7 @@ body {
 #data {
   text-align: left;
   word-wrap: break-word;
+  word-break: break-all;
 }
 #data #title {
   font-size: 120%;

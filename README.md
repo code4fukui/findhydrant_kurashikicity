@@ -6,7 +6,7 @@ A web application to search for fire hydrants and other firefighting water sourc
 
 ## Demo
 
-**https://code4fukui.github.io/findhydrant_kurashikicity/**
+**https://github.com/code4fukui/findhydrant_kurashikicity
 
 
 ![Screenshot of the findhydrant_kurashikicity application showing a map of Kurashiki with icons for hydrants. A popup is open on one hydrant, displaying its details.](ss.jpg)

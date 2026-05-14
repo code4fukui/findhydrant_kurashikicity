@@ -4,7 +4,7 @@
 
 ## デモ
 
-**https://code4fukui.github.io/findhydrant_kurashikicity/**
+**https://github.com/code4fukui/findhydrant_kurashikicity
 
 ![消火栓のアイコンが配置された倉敷市の地図を表示する findhydrant_kurashikicity アプリのスクリーンショット。1つの消火栓のポップアップが開き、詳細情報が表示されています。](ss.jpg)
 
